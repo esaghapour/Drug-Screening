@@ -1,0 +1,8 @@
+streamlit==1.11.1
+pandas==1.2.4
+plotly== 1.3.5
+pycaret==2.3.10
+numpy==1.19.5
+streamlit-aggrid
+pillow==9.2.0
+
