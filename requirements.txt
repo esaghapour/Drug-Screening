@@ -1,8 +1,6 @@
 streamlit
-streamlit-bokeh-events
-jinja2==3.0.3
-pycaret==2.3.5
-pandas==1.2.4
+pycaret
+pandas
 plotly
 numpy
 streamlit-aggrid
