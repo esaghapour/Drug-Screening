@@ -66,7 +66,7 @@ def plt_boundry_drug(thr,out1,sample_name,style):
 
               )
               ,width=1200, height=500,
-              yaxis_title="IC50 Value",
+              yaxis_title="LN(IC50) Values",
               xaxis_title= "DRUG_NAME",
               legend_title="Sample_ID",
               title='Drug Screenign Result with Min-Max on Threshold Based on Literature Survey'
@@ -93,7 +93,7 @@ def plt_boundry_drug(thr,out1,sample_name,style):
 
                )
                ,width=1200, height=500,
-               yaxis_title="IC50 Value",
+               yaxis_title="LN(IC50) Values",
                xaxis_title= "DRUG_NAME",
                legend_title="Sample_ID",
                title='Drug Screenign Result with Min-Max on Threshold Based on GDSC Data'
@@ -248,7 +248,7 @@ if uploaded_files:
                 fig = px.scatter(out, x="DRUG_NAME", y="Label", symbol=out['TCGA_DESC'].astype(str), color=out['SAMPLE_ID'].astype(str))
                 fig.update_layout(
                    
-                    yaxis_title="IC50 Value",
+                    yaxis_title="LN(IC50) Values",
                     legend_title="Sample_ID, Cancer Type",
                     width=1000, height=500)
                 fig.update_traces(marker=dict(size=10,
